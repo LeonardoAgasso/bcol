@@ -1,0 +1,19 @@
+{% set version = "1.0" %}
+
+package:
+  name: "{{ name|lower }}"
+  version: "{{ version }}"
+
+source:
+  path: ../src
+
+requirements:
+  host:
+
+  run:
+
+
+
+about:
+  home: https://github.com/LeonardoAgasso/bsort
+  summary: Description
