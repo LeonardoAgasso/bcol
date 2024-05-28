@@ -1,19 +1,22 @@
-{% set version = "1.0" %}
+{% set name = "bcol" %}
+{% set version = "1.1" %}
 
 package:
   name: "{{ name|lower }}"
   version: "{{ version }}"
+
+build:
+  noarch: generic
 
 source:
   path: ../src
 
 requirements:
   host:
-
+    - bash
   run:
-
-
+    - bash
 
 about:
-  home: https://github.com/LeonardoAgasso/bsort
-  summary: Description
+  home: https://github.com/LeonardoAgasso/bcol
+  summary: Column, but leveraging multiple cores (6 by default)
