@@ -48,7 +48,7 @@ else
 fi
 
 # Split the input into chunks
-CHUNKSIZE=1000  # You can adjust this size based on your needs
+CHUNKSIZE=$CORES
 split -l $CHUNKSIZE -d -a 4 --additional-suffix=.chunk "$FILE" "$TMPDIR/chunk_"
 
 # Process each chunk in parallel
